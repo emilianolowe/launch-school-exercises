@@ -1,0 +1,7 @@
+# Exercise 5
+
+def car(make, model)
+  "#{make} #{model}"
+end
+
+puts car('Toyota', 'Corolla')

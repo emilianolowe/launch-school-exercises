@@ -1,11 +1,8 @@
-# Name Not Found
+# Exercise 8
 
 def assign_name(name = 'Bob')
   name
 end
 
-
-# Given Code
 puts assign_name('Kevin') == 'Kevin'
 puts assign_name == 'Bob'
-
