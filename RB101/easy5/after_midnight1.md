@@ -46,4 +46,5 @@ time_of_day(-4231) == "01:29"
           - quotient.divmod(24) == hh
 
 
-## How do we turn 800 into hh:mm?
+## How do we turn 800 into hh:mm? 
+We call the string#format method

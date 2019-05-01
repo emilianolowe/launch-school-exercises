@@ -1,13 +1,7 @@
 # Sum of Digits
 
 def sum(int)
-  number = 0
-
-  int.digits.each do |digit|
-    number += digit
-  end
-
-  number
+  int.digits.reduce(&:+)
 end
 
 # Example/ Test Cases and Expected output

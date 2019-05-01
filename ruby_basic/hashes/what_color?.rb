@@ -7,3 +7,5 @@ car = {
 }
 
 p car[:color]
+
+car[:condition]
