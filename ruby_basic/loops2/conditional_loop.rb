@@ -1,4 +1,4 @@
-# Conditional Loop
+# Exercise 3
 
 process_the_loop = [true, false].sample
 
@@ -8,5 +8,5 @@ if process_the_loop
     break
   end
 else
-  puts "The loops wasn't processed!"
+  puts "The loop wasn't processed!"
 end
