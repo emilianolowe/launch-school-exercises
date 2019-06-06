@@ -23,19 +23,19 @@
 
 def substrings_at_start(string)
   result = []
-  0.upto(string.size) do |idx|
+  0.upto(string.size - 1) do |idx|
     result << string[0..idx]
   end
-  result
+  p result
 end
 
 def substrings(string)
-  results = []
-  0.upto(string.size) do |start_idx|
-    this_substring = string[start_idx..-1]
-    results.concat(substrings_at_start(this_substring))
+  result =[]
+  (0..string.size).each do |start_index|
+    current_substring = string[start_index..-1]
+    result.concat(substrings_at_start(current_substring))
   end
-  p results
+  p result
 end
 
 p substrings('abcde') == [
