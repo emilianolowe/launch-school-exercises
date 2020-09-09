@@ -1,9 +1,5 @@
 function isOdd(int) {
-  if (Math.abs(int) % 2 == 1) {
-    return true;
-  } else {
-    return false;
-  }
+  return Math.abs(int) % 2 == 1;
 }
 
 console.log(isOdd(2)); // => false

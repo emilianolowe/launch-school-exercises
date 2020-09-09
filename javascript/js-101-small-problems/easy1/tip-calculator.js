@@ -1,11 +1,11 @@
-let rlSync = require('readline-sync');
+let rlSync = require("readline-sync");
 
-// Get input and convert to Numbers
-let bill = rlSync.question('What is the bill? ');
-let tipPercentage = rlSync.question('What is the tip percentage? ');
-bill = Number(bill);
-tipPercentage = Number(tipPercentage);
+let bill = parseFloat(rlSync.question('What is the bill? '));
 
-let tipTotal = (bill * tipPercentage) / 100;
+let percentage = parseFloat(rlSync.question('What is the tip percentage? '));
 
-console.log(`The tip is $${tipTotal} \nThe total is $${bill + tipTotal}`);
+let tip = bill * (percentage / 100);
+
+let total = bill + tip;
+
+console.log(`The tip is $${tip.toFixed(2)} \nThe total is $${total.toFixed(2)}`);
